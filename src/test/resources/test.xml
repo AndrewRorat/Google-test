@@ -2,7 +2,7 @@
 <suite name="Suite1" verbose="1">
 
     <parameter name="browser" value="chrome"/>
-    <parameter name="searchingText" value="automation"/>
+    <parameter name="searchingText" value="addons"/>
     <test name="Search test">
         <classes>
             <class name="search.SearchTest"/>

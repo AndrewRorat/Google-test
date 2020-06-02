@@ -17,8 +17,8 @@ public class LocalTestRunner {
     protected SearchPage searchPage;
     private final String CHROME_DRIVER_INIT = "webdriver.chrome.driver";
     private final String GECKO_DRIVER_INIT = "webdriver.gecko.driver";
-    private final String CHROME_DRIVER_FILE_PATH = "C:src\\main\\resources\\chromedriver.exe";
-    private final String GECKO_DRIVER_FILE_PATH = "C:src\\main\\resources\\geckodriver.exe";
+    private final String CHROME_DRIVER_FILE_PATH = "src\\main\\resources\\chromedriver.exe";
+    private final String GECKO_DRIVER_FILE_PATH = "src\\main\\resources\\geckodriver.exe";
     private String URL = "https://www.google.com/";
 
     @BeforeClass

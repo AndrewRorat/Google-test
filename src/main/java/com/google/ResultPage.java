@@ -4,24 +4,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class ResultPage {
     private WebDriver driver;
 
-    @FindBy(xpath = "//a[@id='vn1s0p1c0']//h3[@class='sA5rQ']")
-    private WebElement firstTitleText;
+    @FindBy(xpath = "//a/h3")
+    private List<WebElement> searchResults;
 
     public ResultPage(WebDriver driver) {
         this.driver = driver;
     }
 
     public String getTitleText() {
-        return firstTitleText.getText();
-    }
-
-    @Override
-    public String toString() {
-        return "ResultPage{" +
-                "firstTitleText=" + firstTitleText +
-                '}';
+        final int FIRST_RESULT = 0;
+        return searchResults.get(FIRST_RESULT).getText();
     }
 }
