@@ -12,20 +12,17 @@ public class SearchPage {
     @FindBy(name = "q")
     private WebElement searchField;
 
-//    @FindBy(xpath = "//div[@class='tfB0Bf']/center/input[@value='Google Search']")
-//    private WebElement popUpGoogleSearchButton;
-
     public SearchPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public SearchPage insertTextToSearch(String text){
+    public SearchPage insertTextToSearch(String text) {
         searchField.click();
         searchField.sendKeys(text);
         return this;
     }
 
-    public ResultPage clickEnterToSearch(){
+    public ResultPage clickEnterToSearch() {
         searchField.sendKeys(Keys.RETURN);
         return PageFactory.initElements(driver, ResultPage.class);
     }

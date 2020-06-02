@@ -14,7 +14,7 @@ public class ResultPage {
         this.driver = driver;
     }
 
-    public String getTitleText(){
+    public String getTitleText() {
         return firstTitleText.getText();
     }
 

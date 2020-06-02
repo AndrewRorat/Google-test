@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite1" verbose="1" >
+<suite name="Suite1" verbose="1">
 
     <parameter name="browser" value="chrome"/>
     <parameter name="searchingText" value="automation"/>
-    <test name="Search test" >
+    <test name="Search test">
         <classes>
-            <class name="search.SearchTest" />
+            <class name="search.SearchTest"/>
         </classes>
     </test>
 </suite>
